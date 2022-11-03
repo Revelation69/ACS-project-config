@@ -19,7 +19,7 @@ cd /var/www/html/
 touch healthstatus
 sed -i "s/localhost/acs-database.cfagfrpr0cv7.us-east-2.rds.amazonaws.com/g" wp-config.php 
 sed -i "s/username_here/ACSadmin/g" wp-config.php 
-sed -i "s/password_here/Olasunkanmi200./g" wp-config.php 
+sed -i "s/password_here/Olasunkanmi200/g" wp-config.php 
 sed -i "s/database_name_here/wordpressdb/g" wp-config.php 
 chcon -t httpd_sys_rw_content_t /var/www/html/ -R
 systemctl restart httpd
